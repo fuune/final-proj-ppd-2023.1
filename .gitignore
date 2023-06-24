@@ -1,0 +1,7 @@
+## Xcode User settings
+xcuserdata/
+
+## MacOS General
+.DS_Store
+.AppleDouble
+.LSOverride
