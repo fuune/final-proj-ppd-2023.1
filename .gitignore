@@ -1,7 +1,10 @@
-## Xcode User settings
-xcuserdata/
-
-## MacOS General
+## MacOS general files
 .DS_Store
 .AppleDouble
 .LSOverride
+
+## Xcode User settings files
+xcuserdata/
+
+## Python byte-compiled files
+__pycache__/
