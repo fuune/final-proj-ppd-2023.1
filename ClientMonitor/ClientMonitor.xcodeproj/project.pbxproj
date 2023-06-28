@@ -16,6 +16,9 @@
 		254CFC042A474482006363F4 /* ClientMonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CFC032A474482006363F4 /* ClientMonitorTests.swift */; };
 		254CFC0E2A474482006363F4 /* ClientMonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CFC0D2A474482006363F4 /* ClientMonitorUITests.swift */; };
 		254CFC102A474482006363F4 /* ClientMonitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254CFC0F2A474482006363F4 /* ClientMonitorUITestsLaunchTests.swift */; };
+		25E47B7D2A4C8D1F00EDD56E /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E47B7C2A4C8D1F00EDD56E /* SocketIOManager.swift */; };
+		25E47B802A4C9BD700EDD56E /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 25E47B7F2A4C9BD700EDD56E /* SocketIO */; };
+		D7CDF6B376B8A48BB3FD0915 /* Pods_ClientMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD5509C64C35E63E0A18914 /* Pods_ClientMonitor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD5509C64C35E63E0A18914 /* Pods_ClientMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		254CFBE92A474480006363F4 /* ClientMonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientMonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		254CFBEC2A474480006363F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		254CFBEE2A474480006363F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,9 @@
 		254CFC092A474482006363F4 /* ClientMonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClientMonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		254CFC0D2A474482006363F4 /* ClientMonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientMonitorUITests.swift; sourceTree = "<group>"; };
 		254CFC0F2A474482006363F4 /* ClientMonitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientMonitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25E47B7C2A4C8D1F00EDD56E /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		51276B961D13607630E2568A /* Pods-ClientMonitor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMonitor.release.xcconfig"; path = "Target Support Files/Pods-ClientMonitor/Pods-ClientMonitor.release.xcconfig"; sourceTree = "<group>"; };
+		EA132A842CE311536D37503F /* Pods-ClientMonitor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientMonitor.debug.xcconfig"; path = "Target Support Files/Pods-ClientMonitor/Pods-ClientMonitor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7CDF6B376B8A48BB3FD0915 /* Pods_ClientMonitor.framework in Frameworks */,
+				25E47B802A4C9BD700EDD56E /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				254CFC022A474482006363F4 /* ClientMonitorTests */,
 				254CFC0C2A474482006363F4 /* ClientMonitorUITests */,
 				254CFBEA2A474480006363F4 /* Products */,
+				832E8B3001B2668F6F7EB998 /* Pods */,
+				D946CFEF3913B2F9E61B0761 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +113,7 @@
 				254CFBEC2A474480006363F4 /* AppDelegate.swift */,
 				254CFBEE2A474480006363F4 /* SceneDelegate.swift */,
 				254CFBF02A474480006363F4 /* ViewController.swift */,
+				25E47B7C2A4C8D1F00EDD56E /* SocketIOManager.swift */,
 				254CFBF22A474480006363F4 /* Main.storyboard */,
 				254CFBF52A474482006363F4 /* Assets.xcassets */,
 				254CFBF72A474482006363F4 /* LaunchScreen.storyboard */,
@@ -127,6 +139,23 @@
 			path = ClientMonitorUITests;
 			sourceTree = "<group>";
 		};
+		832E8B3001B2668F6F7EB998 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA132A842CE311536D37503F /* Pods-ClientMonitor.debug.xcconfig */,
+				51276B961D13607630E2568A /* Pods-ClientMonitor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D946CFEF3913B2F9E61B0761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD5509C64C35E63E0A18914 /* Pods_ClientMonitor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +163,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 254CFC132A474482006363F4 /* Build configuration list for PBXNativeTarget "ClientMonitor" */;
 			buildPhases = (
+				E56705F56100481820A5D8A2 /* [CP] Check Pods Manifest.lock */,
 				254CFBE52A474480006363F4 /* Sources */,
 				254CFBE62A474480006363F4 /* Frameworks */,
 				254CFBE72A474480006363F4 /* Resources */,
+				529C2D5E91E762A9F169A64A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ClientMonitor;
+			packageProductDependencies = (
+				25E47B7F2A4C9BD700EDD56E /* SocketIO */,
+			);
 			productName = ClientMonitor;
 			productReference = 254CFBE92A474480006363F4 /* ClientMonitor.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +249,9 @@
 				Base,
 			);
 			mainGroup = 254CFBE02A474480006363F4;
+			packageReferences = (
+				25E47B7E2A4C9BD700EDD56E /* XCRemoteSwiftPackageReference "socket" */,
+			);
 			productRefGroup = 254CFBEA2A474480006363F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,11 +290,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		529C2D5E91E762A9F169A64A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClientMonitor/Pods-ClientMonitor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ClientMonitor/Pods-ClientMonitor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClientMonitor/Pods-ClientMonitor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56705F56100481820A5D8A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ClientMonitor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		254CFBE52A474480006363F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E47B7D2A4C8D1F00EDD56E /* SocketIOManager.swift in Sources */,
 				254CFBF12A474480006363F4 /* ViewController.swift in Sources */,
 				254CFBED2A474480006363F4 /* AppDelegate.swift in Sources */,
 				254CFBEF2A474480006363F4 /* SceneDelegate.swift in Sources */,
@@ -432,6 +512,7 @@
 		};
 		254CFC142A474482006363F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA132A842CE311536D37503F /* Pods-ClientMonitor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +540,7 @@
 		};
 		254CFC152A474482006363F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51276B961D13607630E2568A /* Pods-ClientMonitor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -596,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25E47B7E2A4C9BD700EDD56E /* XCRemoteSwiftPackageReference "socket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25E47B7F2A4C9BD700EDD56E /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25E47B7E2A4C9BD700EDD56E /* XCRemoteSwiftPackageReference "socket" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 254CFBE12A474480006363F4 /* Project object */;
 }

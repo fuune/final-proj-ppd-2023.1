@@ -31,4 +31,13 @@ na data final de entrega ou, em casos excepcionais, a combinar com o professor.
 - Devem ser entregues TODOS os códigos. 
 - Deverá  ser  entregue,  se  a  linguagem  de  programação  permitir,  um  código 
 executável (.jar, .exe, etc). 
- 
+ ## Commands
+- create proto files: python3 -m grpc_tools.protoc --proto_path=. ./snitch.proto --python_out=. --grpc_python_out=.
+- run socket server: uvicorn --reload server_chat:app
+- run rpc server: python3 server_snitch.py
+- start a node:
+    - on background: brew services start rabbitmq
+    - on foreground: CONF_ENV_FILE="/opt/homebrew/etc/rabbitmq/rabbitmq-env.conf" /opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server
+- stopping the server:
+    - brew services stop rabbitmq
+    - /opt/homebrew/opt/rabbitmq/sbin/rabbitmqctl shutdown

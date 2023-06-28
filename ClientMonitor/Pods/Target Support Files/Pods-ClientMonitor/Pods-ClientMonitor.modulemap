@@ -1,0 +1,6 @@
+framework module Pods_ClientMonitor {
+  umbrella header "Pods-ClientMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
